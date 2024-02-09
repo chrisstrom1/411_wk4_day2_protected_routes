@@ -22,8 +22,8 @@ const Login = () => {
 
   const login = (e) => {
     e.preventDefault();
-    // set cookie here
-    // set loggedIn = true and max-age = 60*1000 (one minute)
+    // Set cookie
+    document.cookie = "loggedIn=true;max-age=60*1000"; // Expires in one minute
 
     navigate("/");
   };
